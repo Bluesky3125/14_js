@@ -25,4 +25,4 @@ obj[hidden] = '비밀 값';
 obj['name'] = '홍길동';
 console.log(obj);
 console.log(obj[hidden]);
-console.log(Object.keys(obj));  // Symbol 타입의 속성은 Object.keys()로 접근할 수 없다.
+console.log(Object.keys(obj));  // Object.keys: 매개변수에 들어온 객체의 프로퍼티를 추출해서 보여주는 함수(symbol은 보여주지 않음)
