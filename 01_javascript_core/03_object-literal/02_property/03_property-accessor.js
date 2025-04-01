@@ -12,3 +12,21 @@ dog.eat('감자');
 // 2. 대괄호 표기법(square bracket notation)
 console.log(dog['name']);
 dog['eat']('고구마');
+
+// 대괄호 표기법을 특별히 고려해야 하는 경우
+var obj = {
+    under_key : 'under_key',    // 프로퍼티 키를 문자열이 아닌 형태로 할 수 있는 건 _, $만 가능
+    'dash-key' : 'dash-key',
+    0 : 1
+};
+
+// 마침표 표기법은 접근에 한계가 있다.($, _까지의 특수문자는 마침표 표기법으로 가능)
+console.log(obj.under_key);
+// console.log(obj.dash-key);
+// console.log(obj.0);
+
+// 대괄호 표기법은 다양한 형태의 프로퍼티들을 모두 접근할 수 있다.
+console.log(obj['under_key']);
+console.log(obj['dash-key']);
+console.log(obj['0']);
+console.log(obj[0]);            // 숫자 프로퍼티 키일 경우에는 숫자로 바로 접근 가능
