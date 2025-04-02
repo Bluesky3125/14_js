@@ -19,9 +19,9 @@ console.log(str.search(/b/));
 console.log('--------------------------------');
 
 console.log(str.startsWith('Ja'));
-console.log(str.startsWith('va', 2));
+console.log(str.startsWith('va', 2));       // 2번 인덱스부터 시작해서 va로 시작하는가
 console.log(str.endsWith('pt'));
-console.log(str.endsWith('va', 4));
+console.log(str.endsWith('va', 4));         // 4번 인덱스까지만 볼 때 va로 끝나는가
 console.log('--------------------------------');
 
 for(let i = 0; i < str.length; i++)
@@ -31,13 +31,11 @@ console.log('--------------------------------');
 console.log(str.substring(1,4));
 console.log(str.substring(1));
 console.log(str.substring(4,1));
-console.log(str.substring(-1));
 console.log(str.substring(1,20));
 console.log('--------------------------------');
 
 console.log(str.slice(1,4));
 console.log(str.slice(1));
-console.log(str.slice(4,1));
 console.log(str.slice(-1));
 console.log(str.slice(1,20));
 console.log('--------------------------------');
